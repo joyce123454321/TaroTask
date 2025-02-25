@@ -6,10 +6,17 @@
 //
 
 import SwiftUI
+var cardList = [CardObject(title: "", task: ""), CardObject(title: "", task: ""), CardObject(title: "", task: "")]
 
 struct DeckView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ScrollView(.horizontal, showsIndicators: false) {
+            HStack{
+//                ForEach(cardList) {
+//                    
+//                }
+            }
+        }
     }
 }
 
