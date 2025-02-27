@@ -7,12 +7,15 @@
 
 import SwiftUI
 
+
 struct TaskGeneratedView: View {
+    @State var deck: Array<CardObject>
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        CardObjectView(card: deck[Int.random(in: 0..<($deck.count - 1))])
+            
     }
 }
 
 #Preview {
-    TaskGeneratedView()
+    TaskGeneratedView(deck: [CardObject(title: "", task: ""), CardObject(title: "", task: "")])
 }
