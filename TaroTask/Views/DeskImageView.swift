@@ -10,9 +10,25 @@ import SwiftUI
 struct DeskImageView: View {
     @State var cardList: Array<CardObject>
     
-    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack {
+            Button(action: {
+                
+            }, label: {
+                Image("rightarrow").resizable().frame(width: 30, height: 30)
+            })
+            Spacer()
+        }
+        NavigationView{
+            TabView{
+                ForEach(cardList) { list in
+                    CardObjectView(card: list)
+                }
+            }
+            .tabViewStyle(.page)
+            .indexViewStyle(.page(backgroundDisplayMode: .always))
+            .navigationTitle("Deck Title")
+        }
     }
 }
 

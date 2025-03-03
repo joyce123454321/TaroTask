@@ -16,8 +16,9 @@ struct CardObjectView: View {
                 .edgesIgnoringSafeArea(.all)
                 .foregroundColor(.gray)
                 .opacity(0.5)
+                .cornerRadius(30).padding()
             VStack{
-                Text(card.title)
+                Text(card.title).font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
                     .padding(.vertical, 20)
                     .padding(.horizontal, 20)
                 Text(card.task)
