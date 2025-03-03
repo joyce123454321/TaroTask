@@ -2,33 +2,20 @@
 //  CardObject.swift
 //  TaroTask
 //
-//  Created by Joyce Chang (student LM) on 2/25/25.
+//  Created by Grace Shang (student LM) on 2/27/25.
 //
 
-import SwiftUI
+import Foundation
 
-struct CardObject: View {
-    @State var title: String
-    @State var task: String
-    var body: some View {
-        ZStack{
-            Rectangle()
-                .edgesIgnoringSafeArea(.all)
-                .foregroundColor(.gray)
-                .opacity(0.5)
-            VStack{
-                Text(title)
-                    .padding(.vertical, 20)
-                    .padding(.horizontal, 20)
-                Text(task)
-                    .padding(.horizontal, 20)
-                    .padding(.vertical, 20)
-                Spacer()
-            }
-        }
+struct CardObject: Identifiable {
+    let id = UUID()
+    
+    var title: String
+    var task: String
+    
+    init(title: String = "task name hahahaha", task: String = "mi mi mi mi mo mo mo mo ma ma ma ma ma") {
+        self.title = title
+        self.task = task
     }
-}
-
-#Preview {
-    CardObject(title: "Placeholder Title abcedfghijklmnopqrstuvwxyzabcedfghijklmnopqrstuvwxyzabcedfghijklmnopqrstuvwxyzdjdjsjaakajsjsjsjsjsjsjsjsj", task: "Placeholder Task abcedfghijklmnopqrstuvwxyzabcedfghijklmnopqrstuvwxyzabcedfghijklmnopqrstuvwxyzdjdjsjaakajsjsjsjsjsjsjsjsj")
+    
 }
