@@ -19,7 +19,7 @@ struct CardObjectView: View {
                 .cornerRadius(30)
                 .padding()
             VStack{
-                Text(card.title).font(.title)
+                Text(card.title).font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
                     .padding(.vertical, 20)
                     .padding(.horizontal, 20)
                 Text(card.task)
