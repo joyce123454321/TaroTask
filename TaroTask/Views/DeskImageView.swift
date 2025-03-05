@@ -8,8 +8,7 @@
 import SwiftUI
 
 struct DeskImageView: View {
-    @State var cardList: Array<CardObject>
-    
+    @State var deck1: DeckObject
     var body: some View {
         HStack {
             Button(action: {
@@ -21,7 +20,7 @@ struct DeskImageView: View {
         }
         NavigationView{
             TabView{
-                ForEach(cardList) { list in
+                ForEach(deck1.cards) { list in
                     CardObjectView(card: list)
                 }
             }
@@ -33,5 +32,5 @@ struct DeskImageView: View {
 }
 
 #Preview {
-    DeskImageView(cardList: [CardObject(title: "drink water", task: "drink 40 gallons of water"), CardObject(title: "go outside", task: "go outside for 20 minutes"), CardObject(title: "walk dog", task: "walk dog around the neighborhood")])
+    DeskImageView(deck1: DeckObject(cards: [CardObject(title: "drink water", task: "drink 40 gallons of water"), CardObject(title: "go outside", task: "go outside for 20 minutes"), CardObject(title: "walk dog", task: "walk dog around the neighborhood")]))
 }
