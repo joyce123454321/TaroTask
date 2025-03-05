@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct HomeView: View {
-    @Binding var deck1: DeckObject
+    @State var deck1: DeckObject
 
     var body: some View {
         Text("Hi World!")
