@@ -26,11 +26,11 @@ struct DeskImageView: View {
             }
             .tabViewStyle(.page)
             .indexViewStyle(.page(backgroundDisplayMode: .always))
-            .navigationTitle("Deck Title")
+            .navigationTitle(deck1.deckName)
         }
     }
 }
 
 #Preview {
-    DeskImageView(deck1: DeckObject(cards: [CardObject(title: "drink water", task: "drink 40 gallons of water"), CardObject(title: "go outside", task: "go outside for 20 minutes"), CardObject(title: "walk dog", task: "walk dog around the neighborhood")]))
+    DeskImageView(deck1: DeckObject())
 }

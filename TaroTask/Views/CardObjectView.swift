@@ -19,10 +19,10 @@ struct CardObjectView: View {
                 .cornerRadius(30).padding()
             VStack{
                 Text(card.title).font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
-                    .padding(.vertical, 20)
+                    .padding(.vertical, 50)
                     .padding(.horizontal, 20)
                 Text(card.task)
-                    .padding(.horizontal, 20)
+                    .padding(.horizontal, 10)
                     .padding(.vertical, 20)
                 Spacer()
             }

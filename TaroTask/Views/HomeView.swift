@@ -8,13 +8,40 @@
 import SwiftUI
 
 struct HomeView: View {
-    @Binding var deck1: DeckObject
-
+    @State var decksArray: Array<DeckObject> = []
+    
     var body: some View {
-        Text("Hi World!")
+
+        NavigationView{
+            TabView{
+                ForEach(decksArray) { list in
+                    DeckObjectView(deck1: list)
+                }
+            }
+            .tabViewStyle(.page)
+            .indexViewStyle(.page(backgroundDisplayMode: .always))
+        }
+        
+        HStack {
+            Button(action: {
+                
+            }, label: {
+                Image("petCat")
+            })
+            Button(action: {
+                
+            }, label: {
+                Image("houseICON")
+        })
+            Button(action: {
+                
+            }, label: {
+                Image("checklistICON")
+        })
+        }.padding()
     }
 }
 
 #Preview {
-    HomeView(deck1: DeckObject(deckCover: "AppIcon", cards: [CardObject(title: "drink water", task: "drink 40 gallons of water"), CardObject(title: "go outside", task: "go outside for 20 minutes"), CardObject(title: "walk dog", task: "walk dog around the neighborhood")]))
+    HomeView(decksArray: [DeckObject(), DeckObject(), DeckObject()])
 }
