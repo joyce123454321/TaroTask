@@ -9,15 +9,9 @@ import SwiftUI
 
 struct DeskImageView: View {
     @State var deck1: DeckObject
+    @Environment(\.dismiss) private var dismiss
+
     var body: some View {
-        HStack {
-            Button(action: {
-                
-            }, label: {
-                Image("rightarrow").resizable().frame(width: 30, height: 30)
-            })
-            Spacer()
-        }
         NavigationView{
             TabView{
                 ForEach(deck1.cards) { list in
@@ -26,7 +20,18 @@ struct DeskImageView: View {
             }
             .tabViewStyle(.page)
             .indexViewStyle(.page(backgroundDisplayMode: .always))
-            .navigationTitle(deck1.deckName)
+            .navigationTitle(deck1.deckName).font(Constants.TitleFont)
+        }
+        .navigationBarBackButtonHidden()
+        .toolbar{
+            ToolbarItem(placement: .topBarLeading){
+                Button {
+                    dismiss()
+                } label: {
+                    Image("rightarrow")
+                }
+
+            }
         }
     }
 }

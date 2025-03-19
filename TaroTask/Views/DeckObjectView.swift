@@ -17,9 +17,7 @@ struct DeckObjectView: View {
                 .opacity(0.5)
                 .cornerRadius(30).padding()
             VStack{
-                Text(deck1.deckName).font(.title).foregroundColor(.color1)
-                    
-                    
+                Text(deck1.deckName).font(Constants.textFont).foregroundColor(.color1)
                     .padding(.vertical, 50).padding(.horizontal, 20)
                 Spacer()
             }
