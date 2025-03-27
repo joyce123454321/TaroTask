@@ -20,6 +20,8 @@
 		3E7453E12D68F5DB00D1647D /* PetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7453E02D68F5DB00D1647D /* PetView.swift */; };
 		3E7453E52D6E553300D1647D /* CardObjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7453E42D6E553300D1647D /* CardObjectView.swift */; };
 		5289E4D22D70DEE1002FA858 /* CardObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5289E4D12D70DEE1002FA858 /* CardObject.swift */; };
+		5289E4D42D78C675002FA858 /* DeckObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5289E4D32D78C675002FA858 /* DeckObject.swift */; };
+		52DE0E112D7A22CC001752A3 /* DeckObjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DE0E102D7A22CB001752A3 /* DeckObjectView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,8 @@
 		3E7453E02D68F5DB00D1647D /* PetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetView.swift; sourceTree = "<group>"; };
 		3E7453E42D6E553300D1647D /* CardObjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardObjectView.swift; sourceTree = "<group>"; };
 		5289E4D12D70DEE1002FA858 /* CardObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardObject.swift; sourceTree = "<group>"; };
+		5289E4D32D78C675002FA858 /* DeckObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckObject.swift; sourceTree = SOURCE_ROOT; };
+		52DE0E102D7A22CB001752A3 /* DeckObjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckObjectView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +102,8 @@
 				3E7453E02D68F5DB00D1647D /* PetView.swift */,
 				3E7453E42D6E553300D1647D /* CardObjectView.swift */,
 				5289E4D12D70DEE1002FA858 /* CardObject.swift */,
+				5289E4D32D78C675002FA858 /* DeckObject.swift */,
+				52DE0E102D7A22CB001752A3 /* DeckObjectView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -177,6 +183,8 @@
 				3E7453D92D68F56900D1647D /* TaskGeneratedView.swift in Sources */,
 				5289E4D22D70DEE1002FA858 /* CardObject.swift in Sources */,
 				3E7453C32D68F2AA00D1647D /* ContentView.swift in Sources */,
+				5289E4D42D78C675002FA858 /* DeckObject.swift in Sources */,
+				52DE0E112D7A22CC001752A3 /* DeckObjectView.swift in Sources */,
 				3E7453E12D68F5DB00D1647D /* PetView.swift in Sources */,
 				3E7453D72D68F54D00D1647D /* DeskImageView.swift in Sources */,
 				3E7453C12D68F2AA00D1647D /* TaroTaskApp.swift in Sources */,

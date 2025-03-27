@@ -5,7 +5,10 @@
 //  Created by Joyce Chang (student LM) on 2/21/25.
 //
 import SwiftUI
+
 struct PetView: View {
+    @Environment(\.dismiss) private var dismiss
+
     var body: some View {
         let name: String = "Missy"
         var food = 1
@@ -156,13 +159,17 @@ struct PetView: View {
                 
             }//Vstack Bracket
             
-        }
-        
-        
-        
-        
+        }.navigationBarBackButtonHidden()
+            .toolbar{
+                ToolbarItem(placement: .topBarLeading){
+                    Button("Cancel"){
+                        dismiss()
+                    }
+                }
+            }
     }
 }
+
 #Preview {
     PetView()
 }

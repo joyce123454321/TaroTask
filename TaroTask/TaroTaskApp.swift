@@ -8,7 +8,10 @@
 import SwiftUI
 
 @main
+
 struct TaroTaskApp: App {
+    @State var decksArray: Array<DeckObject> = []
+
     var body: some Scene {
         WindowGroup {
             ContentView()

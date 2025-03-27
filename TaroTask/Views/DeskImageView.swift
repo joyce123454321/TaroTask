@@ -8,30 +8,34 @@
 import SwiftUI
 
 struct DeskImageView: View {
-    @State var cardList: Array<CardObject>
-    
+    @State var deck1: DeckObject
+    @Environment(\.dismiss) private var dismiss
+
     var body: some View {
-        HStack {
-            Button(action: {
-                
-            }, label: {
-                Image("rightarrow").resizable().frame(width: 30, height: 30)
-            })
-            Spacer()
-        }
         NavigationView{
             TabView{
-                ForEach(cardList) { list in
+                ForEach(deck1.cards) { list in
                     CardObjectView(card: list)
                 }
             }
             .tabViewStyle(.page)
             .indexViewStyle(.page(backgroundDisplayMode: .always))
-            .navigationTitle("Deck Title")
+            .navigationTitle(deck1.deckName).font(Constants.TitleFont)
+        }
+        .navigationBarBackButtonHidden()
+        .toolbar{
+            ToolbarItem(placement: .topBarLeading){
+                Button {
+                    dismiss()
+                } label: {
+                    Image("rightarrow")
+                }
+
+            }
         }
     }
 }
 
 #Preview {
-    DeskImageView(cardList: [CardObject(title: "drink water", task: "drink 40 gallons of water"), CardObject(title: "go outside", task: "go outside for 20 minutes"), CardObject(title: "walk dog", task: "walk dog around the neighborhood")])
+    DeskImageView(deck1: DeckObject())
 }
