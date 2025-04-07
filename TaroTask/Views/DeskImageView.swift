@@ -1,5 +1,5 @@
 //
-//  DeskImageView.swift
+//  DeckImageView.swift
 //  TaroTask
 //
 //  Created by Joyce Chang (student LM) on 2/21/25.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct DeskImageView: View {
+struct DeckImageView: View {
     @State var deck1: DeckObject
     @Environment(\.dismiss) private var dismiss
 
@@ -37,5 +37,9 @@ struct DeskImageView: View {
 }
 
 #Preview {
-    DeskImageView(deck1: DeckObject())
+//<<<<<<< HEAD
+//    DeskImageView(deck1: DeckObject())
+//=======
+    DeckImageView(deck1: DeckObject(cards: [CardObject(title: "drink water", task: "drink 40 gallons of water"), CardObject(title: "go outside", task: "go outside for 20 minutes"), CardObject(title: "walk dog", task: "walk dog around the neighborhood")]))
+//>>>>>>> Joyce
 }

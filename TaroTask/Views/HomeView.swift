@@ -8,8 +8,13 @@ import SwiftUI
 @MainActor
 
 struct HomeView: View {
+//<<<<<<< HEAD
     @State var decksArray: Array<DeckObject> = []
     @Environment(\.dismiss) private var dismiss
+//=======
+    @State var deck1: DeckObject
+//
+//>>>>>>> Joyce
     var body: some View {
 
 //        NavigationView{

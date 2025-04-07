@@ -8,12 +8,12 @@
 import SwiftUI
 
 struct DeckEditView: View {
-    
+    @State var deck: DeckObject
     var body: some View {
-        Text("hey hi")
+        DeckImageView(deck1: deck)
     }
 }
 
 #Preview {
-    DeckEditView()
+    DeckEditView(deck: DeckObject())
 }

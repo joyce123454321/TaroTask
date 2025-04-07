@@ -8,15 +8,16 @@ import SwiftUI
 
 struct PetView: View {
     @Environment(\.dismiss) private var dismiss
-
+    @State var completedTask: Int = 5
+    @State var pet: petProperties = petProperties()
     var body: some View {
         let name: String = "Missy"
         var food = 1
         var water = 1
         var playtime = 2
-        var completeTask = 5 //each completed task gives 2 crystals
+       
         var healthBar = 45
-        var crystals = 10
+     
         
         
         ZStack{
@@ -52,30 +53,62 @@ struct PetView: View {
                 Spacer()
                 
                 VStack{
-                    Image("petCat")//Cat view
-                        .resizable()
-                        .shadow(radius: 10)
-                        .frame(width: 320, height: 400)
                         
                   
                     if(healthBar == 100 || healthBar >= 91){
+                        
+                        Image("HappyCat")//Cat view
+                            .resizable()
+                            .shadow(radius: 10)
+                            .frame(width: 320, height: 400)
                         
                         Image("healBar: full")
                             .frame(width: 400, height: 70)
                     }//end of first if statement
                     if(healthBar <= 90 && healthBar >= 80){
+                        
+                        Image("CheekyCat")//Cat view
+                            .resizable()
+                            .shadow(radius: 10)
+                            .frame(width: 320, height: 400)
+                        
+                        
+                        
                         Image("healBar: semiFull")
                             .frame(width: 400, height: 70)
                     }//end of second if statement
+                   
                     if(healthBar <= 79 && healthBar >= 35){
+                        
+                        Image("WorriedCat")//Cat view
+                            .resizable()
+                            .shadow(radius: 10)
+                            .frame(width: 320, height: 400)
+                        
                         Image("healBar: halfFull")
                             .frame(width: 400, height: 70)
                     }//end of third if statement
+                    
+                    
                     if(healthBar <= 34 && healthBar >= 20){
+                        
+                        Image("VomitCat")//Cat view
+                            .resizable()
+                            .shadow(radius: 10)
+                            .frame(width: 320, height: 400)
+                        
+                        
                         Image("healBar: dying")
                             .frame(width: 400, height: 70)
                     }//end of fourth if statement
                                     if(healthBar < 19 && healthBar >= 0){
+                                        
+                                        Image("DyingCat")//Cat view
+                                            .resizable()
+                                            .shadow(radius: 10)
+                                            .frame(width: 320, height: 400)
+                                        
+                                        
                                         Image("healBar: getUp!")
                                             .frame(width: 400, height: 70)
                                     }//end of last if statement
@@ -88,7 +121,7 @@ struct PetView: View {
                     //Water Button
                     Button {
                         //need to code <<<<----
-                        if(water < completeTask){
+                        if(water < completedTask){
                             _ = 15
                             print("\(name) is not dying of thristy anymore")
                             
@@ -112,7 +145,7 @@ struct PetView: View {
                     //Food Button
                     Button {
                         //need to code <<<<----
-                        if(food < completeTask){
+                        if(food < completedTask){
                             _ = 30
                             print("\(name) is not dying of hunger anymore")
                             
@@ -132,7 +165,7 @@ struct PetView: View {
                     Button {
                         //need to code  <<<<----
                         
-                        if(water < completeTask){
+                        if(water < completedTask){
                             _ = 15
                             print("\(name) is not dying of boredum anymore")
                             
