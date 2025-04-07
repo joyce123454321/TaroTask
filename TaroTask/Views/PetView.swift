@@ -7,8 +7,6 @@
 import SwiftUI
 
 struct PetView: View {
-    @Environment(\.dismiss) private var dismiss
-
     var body: some View {
         let name: String = "Missy"
         var food = 1
@@ -27,10 +25,7 @@ struct PetView: View {
             
             VStack{
                 
-                HStack{
-                    Image("rightarrow")
-                        .padding()
-                        
+                HStack{                        
                     ZStack{
                         
                         Color.color2 //name tag
@@ -159,14 +154,7 @@ struct PetView: View {
                 
             }//Vstack Bracket
             
-        }.navigationBarBackButtonHidden()
-            .toolbar{
-                ToolbarItem(placement: .topBarLeading){
-                    Button("Cancel"){
-                        dismiss()
-                    }
-                }
-            }
+        }
     }
 }
 

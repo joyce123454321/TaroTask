@@ -7,9 +7,12 @@
 
 import SwiftUI
 
-struct DeskImageView: View {
+struct DeckImageView: View {
     @State var deck1: DeckObject
+    @State var decksArray: Array<DeckObject> = []
+    
     @Environment(\.dismiss) private var dismiss
+    @Environment(\.openWindow) private var randCard
 
     var body: some View {
         NavigationView{
@@ -20,7 +23,8 @@ struct DeskImageView: View {
             }
             .tabViewStyle(.page)
             .indexViewStyle(.page(backgroundDisplayMode: .always))
-            .navigationTitle(deck1.deckName).font(Constants.TitleFont)
+            .navigationTitle(deck1.deckName)
+            .font(Constants.TitleFont)
         }
         .navigationBarBackButtonHidden()
         .toolbar{
@@ -30,12 +34,32 @@ struct DeskImageView: View {
                 } label: {
                     Image("rightarrow")
                 }
-
+            }
+        }
+        .toolbar{
+            ToolbarItem(placement: .topBarTrailing){
+                Button {
+                    randCard(id: String(deck1.id))
+                } label: {
+                    Image("checklistICON")
+                }
             }
         }
     }
+    
+    
+    
+    
+    
 }
 
+
+
+
+
+
+
+
 #Preview {
-    DeskImageView(deck1: DeckObject())
+    DeckImageView(deck1: DeckObject())
 }

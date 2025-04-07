@@ -7,12 +7,31 @@
 
 import SwiftUI
 
+
 struct TaskGeneratedView: View {
+    @State var deckChosen: Array<CardObject>
+    @Environment(\.dismiss) private var dismiss
+
+    @Environment(\.openWindow) private var randCard
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView{
+            CardObjectView(card: deckChosen[Int.random(in: 0...$deckChosen.count - 1)])
+        }.navigationBarBackButtonHidden()
+            .toolbar{
+                ToolbarItem(placement: .topBarLeading){
+                    Button {
+                        dismiss()
+                    } label: {
+                        Image("rightarrow")
+                    }
+                }
+            }
+
+            
     }
 }
 
 #Preview {
-    TaskGeneratedView()
+    TaskGeneratedView(deckChosen: DeckObject().cards)
 }

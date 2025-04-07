@@ -11,11 +11,11 @@ struct DeckObjectView: View {
     @State var deck1: DeckObject
     var body: some View {
         ZStack{
-            Rectangle()
-                .edgesIgnoringSafeArea(.all)
+            Image(deck1.deckCover)
+                .resizable()
                 .foregroundColor(.color3)
                 .opacity(0.5)
-                .cornerRadius(30).padding()
+                .cornerRadius(60).padding()
             VStack{
                 Text(deck1.deckName).font(Constants.textFont).foregroundColor(.color1)
                     .padding(.vertical, 50).padding(.horizontal, 20)
