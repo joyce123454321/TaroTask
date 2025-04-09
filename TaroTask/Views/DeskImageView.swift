@@ -1,5 +1,5 @@
 //
-//  DeskImageView.swift
+//  DeckImageView.swift
 //  TaroTask
 //
 //  Created by Joyce Chang (student LM) on 2/21/25.
@@ -39,27 +39,16 @@ struct DeckImageView: View {
         .toolbar{
             ToolbarItem(placement: .topBarTrailing){
                 Button {
-                    randCard(id: String(deck1.id))
+//                    randCard(id: String(deck1.id))
                 } label: {
                     Image("checklistICON")
                 }
             }
         }
     }
-    
-    
-    
-    
-    
 }
 
 
-
-
-
-
-
-
 #Preview {
-    DeckImageView(deck1: DeckObject())
+    DeckImageView(deck1: DeckObject(cards: [CardObject(title: "drink water", task: "drink 40 gallons of water"), CardObject(title: "go outside", task: "go outside for 20 minutes"), CardObject(title: "walk dog", task: "walk dog around the neighborhood")]))
 }

@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		3E7453C12D68F2AA00D1647D /* TaroTaskApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7453C02D68F2AA00D1647D /* TaroTaskApp.swift */; };
 		3E7453C32D68F2AA00D1647D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7453C22D68F2AA00D1647D /* ContentView.swift */; };
-		3E7453C52D68F2AC00D1647D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E7453C42D68F2AC00D1647D /* Assets.xcassets */; };
-		3E7453C82D68F2AC00D1647D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E7453C72D68F2AC00D1647D /* Preview Assets.xcassets */; };
 		3E7453CF2D68F42300D1647D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7453CE2D68F42300D1647D /* HomeView.swift */; };
 		3E7453D12D68F45600D1647D /* DeckEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7453D02D68F45600D1647D /* DeckEditView.swift */; };
 		3E7453D72D68F54D00D1647D /* DeskImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7453D62D68F54D00D1647D /* DeskImageView.swift */; };
@@ -21,15 +19,16 @@
 		3E7453E52D6E553300D1647D /* CardObjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7453E42D6E553300D1647D /* CardObjectView.swift */; };
 		5289E4D22D70DEE1002FA858 /* CardObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5289E4D12D70DEE1002FA858 /* CardObject.swift */; };
 		5289E4D42D78C675002FA858 /* DeckObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5289E4D32D78C675002FA858 /* DeckObject.swift */; };
+		52C8A6B72DA6DE0100D88313 /* Preview Content.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C8A6B62DA6DE0100D88313 /* Preview Content.swift */; };
 		52DE0E112D7A22CC001752A3 /* DeckObjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DE0E102D7A22CB001752A3 /* DeckObjectView.swift */; };
+		D72AD5E02D9EF00E00CC2D3D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D72AD5DF2D9EF00E00CC2D3D /* Assets.xcassets */; };
+		D72AD5E22DA4563B00CC2D3D /* petProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D72AD5E12DA4563B00CC2D3D /* petProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3E7453BD2D68F2AA00D1647D /* TaroTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaroTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E7453C02D68F2AA00D1647D /* TaroTaskApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaroTaskApp.swift; sourceTree = "<group>"; };
 		3E7453C22D68F2AA00D1647D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		3E7453C42D68F2AC00D1647D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		3E7453C72D68F2AC00D1647D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3E7453CE2D68F42300D1647D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		3E7453D02D68F45600D1647D /* DeckEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckEditView.swift; sourceTree = "<group>"; };
 		3E7453D62D68F54D00D1647D /* DeskImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeskImageView.swift; sourceTree = "<group>"; };
@@ -40,7 +39,10 @@
 		3E7453E42D6E553300D1647D /* CardObjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardObjectView.swift; sourceTree = "<group>"; };
 		5289E4D12D70DEE1002FA858 /* CardObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardObject.swift; sourceTree = "<group>"; };
 		5289E4D32D78C675002FA858 /* DeckObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckObject.swift; sourceTree = SOURCE_ROOT; };
+		52C8A6B62DA6DE0100D88313 /* Preview Content.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Preview Content.swift"; sourceTree = "<group>"; };
 		52DE0E102D7A22CB001752A3 /* DeckObjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckObjectView.swift; sourceTree = "<group>"; };
+		D72AD5DF2D9EF00E00CC2D3D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = TaroTask/Views/Assets.xcassets; sourceTree = SOURCE_ROOT; };
+		D72AD5E12DA4563B00CC2D3D /* petProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = petProperties.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 		3E7453B42D68F2AA00D1647D = {
 			isa = PBXGroup;
 			children = (
+				52C8A6B62DA6DE0100D88313 /* Preview Content.swift */,
 				3E7453BF2D68F2AA00D1647D /* TaroTask */,
 				3E7453BE2D68F2AA00D1647D /* Products */,
 			);
@@ -77,23 +80,14 @@
 				3E7453DE2D68F5B100D1647D /* Constants.swift */,
 				3E7453C22D68F2AA00D1647D /* ContentView.swift */,
 				3E7453DD2D68F58C00D1647D /* Views */,
-				3E7453C42D68F2AC00D1647D /* Assets.xcassets */,
-				3E7453C62D68F2AC00D1647D /* Preview Content */,
 			);
 			path = TaroTask;
-			sourceTree = "<group>";
-		};
-		3E7453C62D68F2AC00D1647D /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				3E7453C72D68F2AC00D1647D /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		3E7453DD2D68F58C00D1647D /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				D72AD5E12DA4563B00CC2D3D /* petProperties.swift */,
 				3E7453CE2D68F42300D1647D /* HomeView.swift */,
 				3E7453D02D68F45600D1647D /* DeckEditView.swift */,
 				3E7453D62D68F54D00D1647D /* DeskImageView.swift */,
@@ -104,6 +98,7 @@
 				5289E4D12D70DEE1002FA858 /* CardObject.swift */,
 				5289E4D32D78C675002FA858 /* DeckObject.swift */,
 				52DE0E102D7A22CB001752A3 /* DeckObjectView.swift */,
+				D72AD5DF2D9EF00E00CC2D3D /* Assets.xcassets */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -166,8 +161,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3E7453C82D68F2AC00D1647D /* Preview Assets.xcassets in Resources */,
-				3E7453C52D68F2AC00D1647D /* Assets.xcassets in Resources */,
+				D72AD5E02D9EF00E00CC2D3D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,6 +184,8 @@
 				3E7453C12D68F2AA00D1647D /* TaroTaskApp.swift in Sources */,
 				3E7453D12D68F45600D1647D /* DeckEditView.swift in Sources */,
 				3E7453DB2D68F57500D1647D /* ClipboardView.swift in Sources */,
+				52C8A6B72DA6DE0100D88313 /* Preview Content.swift in Sources */,
+				D72AD5E22DA4563B00CC2D3D /* petProperties.swift in Sources */,
 				3E7453DF2D68F5B100D1647D /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -323,7 +319,6 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"TaroTask/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -351,7 +346,6 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"TaroTask/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

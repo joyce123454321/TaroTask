@@ -16,7 +16,8 @@ struct CardObjectView: View {
                 .edgesIgnoringSafeArea(.all)
                 .foregroundColor(.gray)
                 .opacity(0.5)
-                .cornerRadius(30).padding()
+                .cornerRadius(30)
+                .padding()
             VStack{
                 Text(card.title).font(Constants.TitleFont)
                     .padding(.vertical, 50)
