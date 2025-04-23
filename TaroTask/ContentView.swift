@@ -8,9 +8,9 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var deck1: DeckObject = DeckObject(deckCover: "AppIcon", deckName: "Morning Deck", cards: [CardObject(title: "Wake up", task: "Get out of bed" ), CardObject(title: "Brush teeth", task: "Brush my teeth")])
+    @State var deck1: DeckObject = DeckObject(deckCover: "backgroundImage", deckName: "Morning Deck", cards: [CardObject(title: "Wake up", task: "Get out of bed" ), CardObject(title: "Brush teeth", task: "Brush my teeth")])
         
-    @State var deck2: DeckObject = DeckObject(deckCover: "AppIcon", deckName: "Afternoon Deck", cards: [CardObject(title: "Make Lunch up", task: "Get out of bed" ), CardObject(title: "Brush teeth", task: "Brush my teeth")])
+    @State var deck2: DeckObject = DeckObject(deckCover: "backgroundImage", deckName: "Afternoon Deck", cards: [CardObject(title: "Make Lunch up", task: "Get out of bed" ), CardObject(title: "Brush teeth", task: "Brush my teeth")])
     
     @State var decksArray: Array<DeckObject> = []
 
