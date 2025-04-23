@@ -8,12 +8,12 @@
 import SwiftUI
 
 struct DeckEditView: View {
-    @State var deck: DeckObject
+    @State var deckChosen: DeckObject
     var body: some View {
-        DeckImageView(deck1: deck)
+        DeckImageView(deckChosen: deckChosen)
     }
 }
 
 #Preview {
-    DeckEditView(deck: DeckObject())
+    DeckEditView(deckChosen: DeckObject())
 }

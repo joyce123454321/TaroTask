@@ -27,7 +27,6 @@ struct TaskGeneratedView: View {
                     }
                 }
             }
-            
     }
 }
 

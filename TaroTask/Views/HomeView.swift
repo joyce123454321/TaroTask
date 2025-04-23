@@ -7,12 +7,13 @@
 import SwiftUI
 @MainActor
 
-struct HomeView: View {    
-var deck1: DeckObject = DeckObject(deckCover: "AppIcon", deckName: "Morning Deck", cards: [CardObject(title: "Wake up", task: "Get out of bed" ), CardObject(title: "Brush teeth", task: "Brush my teeth")])
+struct HomeView: View {  
     
-var deck2: DeckObject = DeckObject(deckCover: "AppIcon", deckName: "Afternoon Deck", cards: [CardObject(title: "Make Lunch up", task: "Get out of bed" ), CardObject(title: "Brush teeth", task: "Brush my teeth")])
+@State var deck1: DeckObject = DeckObject(deckCover: "AppIcon", deckName: "Morning Deck", cards: [CardObject(title: "Wake up", task: "Get out of bed" ), CardObject(title: "Brush teeth", task: "Brush my teeth")])
+    
+@State var deck2: DeckObject = DeckObject(deckCover: "AppIcon", deckName: "Afternoon Deck", cards: [CardObject(title: "Make Lunch up", task: "Get out of bed" ), CardObject(title: "Brush teeth", task: "Brush my teeth")])
 
-var decksArray: Array<DeckObject> = []
+@State var decksArray: Array<DeckObject> = []
 
     
     @Environment(\.dismiss) private var dismiss
@@ -20,7 +21,7 @@ var decksArray: Array<DeckObject> = []
         NavigationView{
             TabView{
                 ForEach(decksArray) { list in 
-                    NavigationLink(destination: DeckImageView(deck1: list)){DeckObjectView(deck1: list)}
+                    NavigationLink(destination: DeckImageView(deckChosen: list)){DeckObjectView(deck1: list)}
                 }
             }
             .tabViewStyle(.page)

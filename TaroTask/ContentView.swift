@@ -8,16 +8,25 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var deck1: DeckObject = DeckObject(deckCover: "AppIcon", deckName: "Morning Deck", cards: [CardObject(title: "Wake up", task: "Get out of bed" ), CardObject(title: "Brush teeth", task: "Brush my teeth")])
+        
+    @State var deck2: DeckObject = DeckObject(deckCover: "AppIcon", deckName: "Afternoon Deck", cards: [CardObject(title: "Make Lunch up", task: "Get out of bed" ), CardObject(title: "Brush teeth", task: "Brush my teeth")])
+    
+    @State var decksArray: Array<DeckObject> = []
+
     
     @State private var selectedTab = 0
     var body: some View {
+        
+        var decksArray = [deck1, deck2]
 
         TabView(selection: $selectedTab){
             PetView().tabItem{
-                Image("petCat")
+                Image("CheekyCat").resizable().frame(width: 512, height: 512).aspectRatio(contentMode: .fill).scaledToFill()
+
             }.tag(0)
             
-            HomeView(decksArray: [DeckObject(), DeckObject(), DeckObject()]).tabItem{
+            HomeView(decksArray: [decksArray[0], decksArray[1]]).tabItem{
                 Image("houseICON")
             }.tag(1)
             
