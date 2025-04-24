@@ -17,7 +17,7 @@ struct ContentView: View {
                 Image("petCat")
             }.tag(0)
             
-            HomeView(decksArray: [DeckObject(), DeckObject(), DeckObject()]).tabItem{
+      //      HomeView(decksArray: [DeckObject(), DeckObject(), DeckObject()]).tabItem{
                 Image("houseICON")
             }.tag(1)
             
@@ -26,7 +26,7 @@ struct ContentView: View {
             }.tag(2)
         }        
     }
-}
+//}
 
 #Preview {
     ContentView()

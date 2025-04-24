@@ -19,8 +19,9 @@ var decksArray: Array<DeckObject> = []
     var body: some View {
         NavigationView{
             TabView{
-                ForEach(decksArray) { list in 
+                ForEach(decksArray) { list in
                     NavigationLink(destination: DeckImageView(deck1: list)){DeckObjectView(deck1: list)}
+
                 }
             }
             .tabViewStyle(.page)

@@ -6,18 +6,38 @@
 //
 
 import Foundation
-
+var completedTask: Int = 5
 class petProperties{
-    var healthBar: Int
+    var healthBar = 100
+    var decrease = 10
     var name: String
     var image: String
     
-   
+    // below 5 task healthbar decreases 5 or above
     
-    init(healthBar: Int = 100, name: String = "Missy", image: String = "HappyCat"){
+    var drinkWater: Int {
+        if (completedTask > 0){
+            completedTask -= 1
+        }
+        return  completedTask
+    }
+ //------------------------------------------------------------------------------------------------------
+    var eatFood: Int {
+    
+        if (completedTask > 0 ){
+            completedTask -= 1
+        }
+        return completedTask
+    }
+    
+    init(healthBar: Int = 85, name: String = "Tiki", image: String = "HappyCat"){
         self.healthBar = healthBar
         self.name = name
         self.image = image
+        
+       
+        
+        
+        
     }
-}
-
+} 
