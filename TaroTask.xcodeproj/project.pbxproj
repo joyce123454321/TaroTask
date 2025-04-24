@@ -89,7 +89,6 @@
 		3E7453DD2D68F58C00D1647D /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				D72AD5E12DA4563B00CC2D3D /* petProperties.swift */,
 				3E7453CE2D68F42300D1647D /* HomeView.swift */,
 				3E7453D62D68F54D00D1647D /* DeckImageView.swift */,
 				3E7453D82D68F56900D1647D /* TaskGeneratedView.swift */,
@@ -101,6 +100,7 @@
 				52DE0E102D7A22CB001752A3 /* DeckObjectView.swift */,
 				5289E4D32D78C675002FA858 /* DeckObject.swift */,
 				3E7453E02D68F5DB00D1647D /* PetView.swift */,
+				D72AD5E12DA4563B00CC2D3D /* petProperties.swift */,
 				D72AD5DF2D9EF00E00CC2D3D /* Assets.xcassets */,
 			);
 			path = Views;
