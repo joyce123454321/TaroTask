@@ -10,6 +10,7 @@ import SwiftUI
 struct CardObjectView: View {
     @State var card: CardObject
     
+    
     var body: some View {
         ZStack{
             Rectangle()

@@ -15,27 +15,29 @@ struct ContentView: View {
     @State var decksArray: Array<DeckObject> = []
 
     
-    @State private var selectedTab = 0
+    @State private var selectedTabMAIN = 0
+    
     var body: some View {
         
         var decksArray = [deck1, deck2]
 
-        TabView(selection: $selectedTab){
+        TabView(selection: $selectedTabMAIN){
             PetView().tabItem{
-                Image("CheekyCat").resizable().frame(width: 512, height: 512).aspectRatio(contentMode: .fill).scaledToFill()
+                Image(systemName: "cat")
 
             }.tag(0)
-            
+//            
             HomeView(decksArray: [decksArray[0], decksArray[1]]).tabItem{
-                Image("houseICON")
+                Image(systemName: "rectangle")
             }.tag(1)
             
-            ClipboardView().tabItem{
-                Image("checklistICON")
+            EditCanvasView().tabItem{
+                Image(systemName: "pencil")
             }.tag(2)
-        }        
+            }
+        }
     }
-}
+
 
 #Preview {
     ContentView()

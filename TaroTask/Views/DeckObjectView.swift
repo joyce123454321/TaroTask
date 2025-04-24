@@ -8,16 +8,16 @@
 import SwiftUI
 
 struct DeckObjectView: View {
-    @State var deck1: DeckObject
+    @State var deck: DeckObject
     var body: some View {
         ZStack{
-            Image(deck1.deckCover)
+            Image(deck.deckCover)
                 .resizable()
                 .foregroundColor(.color3)
                 .opacity(0.5)
                 .cornerRadius(60).padding()
             VStack{
-                Text(deck1.deckName).font(Constants.textFont).foregroundColor(.color1)
+                Text(deck.deckName).font(Constants.textFont).foregroundColor(.color1)
                     .padding(.vertical, 50).padding(.horizontal, 20)
                 Spacer()
             }
@@ -26,5 +26,5 @@ struct DeckObjectView: View {
 }
 
 #Preview {
-    DeckObjectView(deck1: DeckObject())
+    DeckObjectView(deck: DeckObject())
 }
