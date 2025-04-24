@@ -24,7 +24,7 @@ struct DeckEditView: View {
                 Button(action: {
                     if numAt > 1 {
                         numAt -= 1
-                    }   
+                    }
                 }, label: {
                     Image("minus")
                         .resizable()

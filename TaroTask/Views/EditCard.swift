@@ -61,7 +61,7 @@ import SwiftUI
                     }
                     Spacer()
                     Spacer()
-                    Spacer() 
+                    Spacer()
                     Spacer()
                     Spacer()
                     Spacer()
