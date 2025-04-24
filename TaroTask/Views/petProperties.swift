@@ -30,7 +30,7 @@ class petProperties{
         return completedTask
     }
     
-    init(healthBar: Int = 85, name: String = "Tiki", image: String = "HappyCat"){
+    init(healthBar: Int = 80, name: String = "Tiki", image: String = "HappyCat"){
         self.healthBar = healthBar
         self.name = name
         self.image = image

@@ -63,6 +63,7 @@ struct PetView: View {
                             .font(.custom(name , size: 55))
                             .font(Constants.TitleFont)
                             
+                            
                   
                             
                             
@@ -236,8 +237,8 @@ struct PetView: View {
                             //need to code  <<<<----
                             if completedTask >= 2 {
                                 completedTask -= 2
-                                pet.healthBar += 15
-                                feedbackText = "+5 Health!"
+                                pet.healthBar += 10
+                                feedbackText = "+10 Health!"
                                         feedbackColor = .green
                             } else {
                                 pet.healthBar -= 15
@@ -270,7 +271,7 @@ struct PetView: View {
                         
                         
                     }// Second Hstack Bracket
-                .padding(.bottom, -17)
+                .padding(.bottom, -35)
             }
                 //GET A GRIP--HURRY UP
            

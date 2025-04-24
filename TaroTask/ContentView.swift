@@ -21,9 +21,9 @@ struct ContentView: View {
                 Image("houseICON")
             }.tag(1)
             
-            ClipboardView().tabItem{
-                Image("checklistICON")
-            }.tag(2)
+//            ClipboardView().tabItem{
+//                Image("checklistICON")
+//            }.tag(2)
         }        
     }
 //}
