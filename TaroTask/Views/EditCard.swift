@@ -59,12 +59,20 @@ import SwiftUI
                             secondaryButton: .cancel()
                         )
                     }
+                    NavigationLink(destination: DeckImageView(deckChosen: DeckObject(cards: deckChosen))){
+                                            Label(
+                                                title: { Text("Go Back!").foregroundColor(.white) },
+                                                icon: { Image("rightarrow") }
+                                            )
+                                        }
                     Spacer()
                     Spacer()
                     Spacer()
                     Spacer()
                     Spacer()
                     Spacer()
+                        .padding()
+                        .padding()
                     
                 }
             }
