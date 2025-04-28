@@ -62,7 +62,7 @@ import SwiftUI
                     NavigationLink(destination: DeckImageView(deckChosen: DeckObject(cards: deckChosen))){
                                             Label(
                                                 title: { Text("Go Back!").foregroundColor(.white) },
-                                                icon: { Image("rightarrow") }
+                                                icon: { Image("") }
                                             )
                                         }
                     Spacer()
@@ -72,7 +72,7 @@ import SwiftUI
                     Spacer()
                     Spacer()
                         .padding()
-                        .padding()
+                        
                     
                 }
             }
