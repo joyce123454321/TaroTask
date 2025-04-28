@@ -13,7 +13,7 @@ struct CardObject: Identifiable {
     var title: String
     var task: String
     
-    init(title: String = "task name hahahaha", task: String = "mi mi mi mi mo mo mo mo ma ma ma ma ma") {
+    init(title: String = "New Task Name", task: String = "New Task Description") {
         self.title = title
         self.task = task
     }

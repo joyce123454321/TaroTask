@@ -17,19 +17,19 @@ import SwiftUI
         var body: some View {
             ZStack {
                 Rectangle()
-                    .foregroundColor(.gray)
+                    .foregroundColor(Color.color4)
                     .ignoresSafeArea()
                 VStack {
                     Spacer()
                     Text("New Title:")
-                        .foregroundColor(.white)
+                        .foregroundColor(Color.color1)
                     TextEditor(text: $cardChosen.title)
                         .background(Color.primary.colorInvert())
                         .cornerRadius(10)
                         .frame(height: 150)
                         .padding(15)
                     Text("New Task:")
-                        .foregroundColor(.white)
+                        .foregroundColor(Color.color1)
                     TextEditor(text: $cardChosen.task)
                         .background(Color.primary.colorInvert())
                         .cornerRadius(10)
@@ -42,7 +42,7 @@ import SwiftUI
                             Rectangle()
                                 .cornerRadius(15)
                                 .frame(width: 200, height: 50)
-                                .foregroundColor(.white)
+                                .foregroundColor(Color.color1)
                                 .opacity(0.5)
                             Text("Done Editing!")
                                 .font(Constants.TitleFont)
@@ -61,7 +61,7 @@ import SwiftUI
                     }
                     NavigationLink(destination: DeckImageView(deckChosen: DeckObject(cards: deckChosen))){
                                             Label(
-                                                title: { Text("Go Back!").foregroundColor(.white) },
+                                                title: { Text("Go Back!").foregroundColor(Color.color1) },
                                                 icon: { Image("") }
                                             )
                                         }
